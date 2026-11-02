@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "lastRun": "2026-11-02T21:40",
+    "added": 6,
+    "checked": 30,
+    "note": "공간정보산업진흥원·기상학회 접속 불가"
+  },
+  "postings": [
+    {
+      "id": "kma-2026-4-career-satellite",
+      "org": "기상청",
+      "orgGroup": "기상·천문",
+      "title": "2026년 제4회 기상청 공무원 경력경쟁채용시험 공고",
+      "position": "기상연구사 · 기상위성 분석 및 예보지원 (지원코드 B, 국가기상위성센터 진천)",
+      "employment": "정규직",
+      "education": "첨부 공고문 확인",
+      "deadline": "2026-11-09",
+      "posted": "2026-10-28",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=306961&searchJobsecode=020&selMenuNo=400&menuNo=401",
+      "keywords": [
+        "위성",
+        "기상",
+        "원격탐사"
+      ],
+      "note": "6개 직위 중 위성 관련은 B만. 등기우편·방문접수만 가능",
+      "verified": true,
+      "addedAt": "2026-11-02T20:30"
+    },
+    {
+      "id": "kari-2026-q4-kps",
+      "org": "항우연",
+      "orgGroup": "우주",
+      "title": "한국항공우주연구원 2026년도 4분기 KPS개발사업본부 특수사업직 채용 공고",
+      "position": "KPS(한국형 위성항법) 개발사업본부 연구직 D1·D2, 2명",
+      "employment": "계약직",
+      "education": "석사 이상",
+      "deadline": "2026-11-05",
+      "posted": "2026-10-21",
+      "url": "https://kari.applyin.co.kr/jobs/23508",
+      "keywords": [
+        "위성"
+      ],
+      "note": "위성항법 분야라 원격탐사와는 간접 관련. 2027-01-01 임용, 대전",
+      "verified": true,
+      "addedAt": "2026-11-02T20:30"
+    },
+    {
+      "id": "kari-2026-q4-special-a1",
+      "org": "항우연",
+      "orgGroup": "우주",
+      "title": "한국항공우주연구원 2026년도 4분기 별정직 연구직 채용 공고",
+      "position": "별정직 연구직 A1 · 분야는 직무기술서(이미지) 확인 필요",
+      "employment": "별정직",
+      "education": "석사 이상",
+      "deadline": "2026-11-05",
+      "posted": "",
+      "url": "https://kari.applyin.co.kr/jobs/23500",
+      "keywords": [
+        "위성"
+      ],
+      "note": "직무 분야가 첨부 이미지에만 있음. 원격탐사 관련인지 원문 확인",
+      "verified": true,
+      "addedAt": "2026-11-02T20:30"
+    },
+    {
+      "id": "kasi-2026-2-research",
+      "org": "천문연",
+      "orgGroup": "기상·천문",
+      "title": "한국천문연구원 2026년 제2차 연구직(정규직) 채용 공고",
+      "position": "연구직 정규직 · 분야는 첨부 공고문(.hwpx) 확인 (우주측지·GNSS·VLBI 가능성)",
+      "employment": "정규직",
+      "education": "첨부 공고문 확인",
+      "deadline": "2026-11-05",
+      "posted": "",
+      "url": "https://www.kasi.re.kr/kor/post/recruitNotice/32481",
+      "keywords": [
+        "위성"
+      ],
+      "note": "마감 11-05 15:00. 모집 분야가 첨부파일에만 있음",
+      "verified": true,
+      "addedAt": "2026-11-02T20:30"
+    },
+    {
+      "id": "kasi-2026-5-contract",
+      "org": "천문연",
+      "orgGroup": "기상·천문",
+      "title": "한국천문연구원 2026년 제5차 계약직 채용 공고",
+      "position": "계약직 · 분야는 첨부 공고문(.hwpx) 확인",
+      "employment": "계약직",
+      "education": "첨부 공고문 확인",
+      "deadline": "2026-11-13",
+      "posted": "",
+      "url": "https://www.kasi.re.kr/kor/post/recruitNotice/32488",
+      "keywords": [
+        "위성"
+      ],
+      "note": "마감 11-13 15:00. 모집 분야가 첨부파일에만 있음",
+      "verified": true,
+      "addedAt": "2026-11-02T20:30"
+    },
+    {
+      "id": "khra-2026-4-qc",
+      "org": "한국해양조사협회",
+      "orgGroup": "해양",
+      "title": "한국해양조사협회 2026년 제4차 직원 공개 채용 공고(계약직)",
+      "position": "해양조사·정보 품질관리 (7급 상당, 1명)",
+      "employment": "계약직",
+      "education": "해양조사·정보 분야 석사 또는 학사+경력 1년",
+      "deadline": "2026-11-17",
+      "posted": "2026-11-02",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=306613",
+      "keywords": [
+        "해양환경",
+        "GIS"
+      ],
+      "note": "원격탐사·LiDAR는 본문에 명시되지 않음",
+      "verified": true,
+      "addedAt": "2026-11-02T20:30"
+    },
+    {
+      "id": "khra-2026-4-hydro",
+      "org": "한국해양조사협회",
+      "orgGroup": "해양",
+      "title": "한국해양조사협회 2026년 제4차 직원 공개 채용 공고(일반직)",
+      "position": "해양조사·정보 기술직 (8급, 2명)",
+      "employment": "정규직",
+      "education": "관련 학사 이상 또는 경력·자격 대체",
+      "deadline": "2026-11-17",
+      "posted": "2026-11-02",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=306612",
+      "keywords": [
+        "해양환경",
+        "GIS"
+      ],
+      "note": "수로측량 중심. 석사 이상에게는 직급이 낮은 편",
+      "verified": true,
+      "addedAt": "2026-11-02T20:30"
+    },
+    {
+      "id": "krc-nongji-gis-2026",
+      "org": "한국농어촌공사",
+      "orgGroup": "농림·환경",
+      "title": "한국농어촌공사 농지관리처 계약직(AI전문가, 공간정보전문가) 채용 공고",
+      "position": "공간정보전문가: 농지종합플랫폼·GIS 기반 정보제공 기능 개발·관리 (1명)",
+      "employment": "계약직",
+      "education": "관련 전공 학사+경력 2년 또는 경력 5년 (석·박사 지원 가능)",
+      "deadline": "2026-11-05",
+      "posted": "2026-10-21",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=306199",
+      "keywords": [
+        "공간정보",
+        "GIS"
+      ],
+      "note": "나주 근무, 계약 ~2027-12-31. 11/5 16:00 마감",
+      "verified": true,
+      "addedAt": "2026-11-02T21:40"
+    },
+    {
+      "id": "siqms-2026-4th-gigan",
+      "org": "공간정보품질관리원",
+      "orgGroup": "국토·공간",
+      "title": "공간정보품질관리원 2026년 제4차 채용 공고(기간제근로자)",
+      "position": "공간정보 기술직 기간제: 측량·지형공간정보 품질검사 (9명)",
+      "employment": "계약직",
+      "education": "학력무관. 측량·지형공간정보·지적·항공사진 등 자격증 필수",
+      "deadline": "2026-11-06",
+      "posted": "2026-10-23",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=306301",
+      "keywords": [
+        "공간정보",
+        "측량"
+      ],
+      "note": "석사 요건 없음, 자격증 필수. 서울·경기 근무",
+      "verified": true,
+      "addedAt": "2026-11-02T21:40"
+    },
+    {
+      "id": "nifos-wildfire-gigan-2026",
+      "org": "국립산림과학원",
+      "orgGroup": "농림·환경",
+      "title": "국립산림과학원 산불연구과 기간제근로자 채용 공고(박사급1, 석사급1, 일반1)",
+      "position": "산불연구과 연구원(박사급/석사급). 관련분야에 공간정보·기상·데이터분석 포함",
+      "employment": "계약직",
+      "education": "관련분야 박사 또는 석사(졸업예정자 가능)",
+      "deadline": "2026-11-13",
+      "posted": "2026-10-30",
+      "url": "https://nifos.forest.go.kr/kfsweb/cop/bbs/selectBoardArticle.do?nttId=3225532&bbsId=BBSMSTR_1034&mn=UKFR_03_01_04&ctgryLrcls=CTGRY128",
+      "keywords": [
+        "공간정보",
+        "원격탐사"
+      ],
+      "note": "10개월, 월 310만(박사)/243.5만(석사). 이메일 접수 11/2~11/13",
+      "verified": true,
+      "addedAt": "2026-11-02T21:40"
+    },
+    {
+      "id": "nifos-msphd-3rd-2026",
+      "org": "국립산림과학원",
+      "orgGroup": "농림·환경",
+      "title": "2026년도 제3차 국립산림과학원 석·박사연구원 선발 공고",
+      "position": "석·박사연구원 (여러 분야. 원격탐사 분야 포함 여부는 첨부 PDF 확인)",
+      "employment": "계약직",
+      "education": "석사 또는 박사",
+      "deadline": "2026-11-02",
+      "posted": "2026-10-27",
+      "url": "https://nifos.forest.go.kr/kfsweb/cop/bbs/selectBoardArticle.do?nttId=3225407&bbsId=BBSMSTR_1034&mn=UKFR_03_01_04&ctgryLrcls=CTGRY128",
+      "keywords": [
+        "원격탐사"
+      ],
+      "note": "오늘(11/2) 마감. 분야는 첨부에만 있음",
+      "verified": true,
+      "addedAt": "2026-11-02T21:40"
+    },
+    {
+      "id": "mof-ilban-imgije-3-gihu",
+      "org": "해양수산부",
+      "orgGroup": "해양",
+      "title": "2026년 제3회 해양수산부 일반임기제 공무원 경력경쟁채용시험 공고",
+      "position": "일반임기제 7급: 기후·환경변화 감시예측 (양식장 재해대응과 함께 총 2명)",
+      "employment": "임기제 공무원",
+      "education": "자격증·경력·학위 요건 (첨부 공고문)",
+      "deadline": "2026-11-09",
+      "posted": "2026-10-30",
+      "url": "https://www.mof.go.kr/doc/ko/selectDoc.do?menuSeq=787&bbsSeq=12&docSeq=69197",
+      "keywords": [
+        "해양환경",
+        "원격탐사"
+      ],
+      "note": "부산. 접수 11/5~11/9 등기우편. 위성자료 활용 여부는 첨부 hwp 확인",
+      "verified": true,
+      "addedAt": "2026-11-02T21:40"
+    },
+    {
+      "id": "chungnam-imgije-drone-8th",
+      "org": "충청남도",
+      "orgGroup": "국토·공간",
+      "title": "2026년도 제8회 충청남도 임기제공무원(미술 전시 기획 및 운영, 드론 운용) 경력경쟁임용시험 시행계획 공고",
+      "position": "지방 임기제공무원: 드론 운용",
+      "employment": "임기제 공무원",
+      "education": "붙임 공고문 확인",
+      "deadline": "2026-11-04",
+      "posted": "2026-10-21",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=306268&menuNo=401&selMenuNo=401",
+      "keywords": [
+        "드론"
+      ],
+      "note": "접수 11/2~11/4 우편·방문. 석사 요건 아님",
+      "verified": true,
+      "addedAt": "2026-11-02T21:40"
+    }
+  ]
+}

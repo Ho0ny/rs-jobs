@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f6b8f">
+<title>원격탐사 채용 레이더</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one narrow column of posting cards, sorted by deadline; a sticky filter bar on top. Swath-blue accent, D-day stripes for urgency. */
+:root {
+  --bg: #f3f6f8;
+  --surface: #ffffff;
+  --fg: #142230;
+  --muted: #5a6b7a;
+  --line: #d8e0e6;
+  --accent: #0f6b8f;
+  --accent-soft: #e2f0f5;
+  --urgent: #c2410c;
+  --urgent-soft: #fdebe1;
+  --soon: #a16207;
+  --soon-soft: #fbf1d9;
+  --ok: #2f7a4f;
+  --ok-soft: #e3f2e8;
+  --star: #b45309;
+  --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d151c; --surface: #15212b; --fg: #e3ebf1; --muted: #93a5b4; --line: #26353f;
+    --accent: #5cb8d9; --accent-soft: #163341;
+    --urgent: #f08a5d; --urgent-soft: #3a1f14; --soon: #e0b44c; --soon-soft: #33290f;
+    --ok: #6fc28f; --ok-soft: #142d1f; --star: #f0a646;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d151c; --surface: #15212b; --fg: #e3ebf1; --muted: #93a5b4; --line: #26353f;
+  --accent: #5cb8d9; --accent-soft: #163341;
+  --urgent: #f08a5d; --urgent-soft: #3a1f14; --soon: #e0b44c; --soon-soft: #33290f;
+  --ok: #6fc28f; --ok-soft: #142d1f; --star: #f0a646;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body {
+  margin: 0;
+  background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap {
+  max-width: 760px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+header.top { padding-block: 22px 14px; display: flex; flex-direction: column; gap: 4px; }
+header.top h1 { margin: 0; font-size: 1.45rem; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+header.top p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+.sync { font-family: var(--font-data); font-size: 0.78rem; color: var(--muted); }
+
+.summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding-block: 6px 14px; }
+.summary div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.summary b { display: block; font-family: var(--font-data); font-size: 1.25rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.summary span { font-size: 0.75rem; color: var(--muted); }
+.summary .u b { color: var(--urgent); }
+
+.bar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+  padding-block: 10px; display: flex; flex-direction: column; gap: 8px;
+}
+.tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.tabs button {
+  font: inherit; font-size: 0.85rem; border: 0; background: transparent; color: var(--muted);
+  padding: 6px 10px; border-radius: 6px; cursor: pointer; white-space: nowrap;
+}
+.tabs button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+.tabs button .n { font-family: var(--font-data); font-size: 0.75rem; opacity: 0.75; margin-left: 4px; }
+.row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.chip {
+  font: inherit; font-size: 0.78rem; border: 1px solid var(--line); background: var(--surface); color: var(--fg);
+  padding: 3px 9px; border-radius: 999px; cursor: pointer;
+}
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.search {
+  flex: 1 1 180px; min-width: 0; font: inherit; font-size: 0.88rem; padding: 6px 10px;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg);
+}
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.list { display: flex; flex-direction: column; gap: 10px; padding-block: 14px 40px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 12px 14px; display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px;
+}
+.card.hidden-mark { opacity: 0.55; }
+.dday {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border-radius: 8px; background: var(--accent-soft); color: var(--accent); padding: 6px 2px; align-self: start;
+}
+.dday b { font-family: var(--font-data); font-weight: 500; font-size: 1rem; font-variant-numeric: tabular-nums; }
+.dday small { font-size: 0.68rem; font-family: var(--font-data); }
+.dday.urgent { background: var(--urgent-soft); color: var(--urgent); }
+.dday.soon { background: var(--soon-soft); color: var(--soon); }
+.dday.open { background: var(--ok-soft); color: var(--ok); }
+.body { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 0.78rem; color: var(--muted); }
+.org { font-weight: 600; color: var(--fg); }
+.new { font-family: var(--font-data); font-size: 0.68rem; letter-spacing: 0.04em; color: var(--surface); background: var(--urgent); padding: 0 6px; border-radius: 4px; }
+.unv { font-size: 0.7rem; border: 1px dashed var(--muted); padding: 0 5px; border-radius: 4px; }
+.title { font-weight: 600; font-size: 0.98rem; line-height: 1.4; overflow-wrap: anywhere; }
+.title a { color: inherit; text-decoration: none; }
+.title a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+.pos { font-size: 0.86rem; color: var(--muted); overflow-wrap: anywhere; }
+.kw { display: flex; gap: 4px; flex-wrap: wrap; }
+.kw span { font-family: var(--font-data); font-size: 0.7rem; color: var(--accent); background: var(--accent-soft); padding: 1px 6px; border-radius: 4px; }
+.note { font-size: 0.8rem; color: var(--muted); border-left: 2px solid var(--line); padding-left: 8px; overflow-wrap: anywhere; }
+.actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.actions button, .actions a {
+  font: inherit; font-size: 0.78rem; padding: 4px 10px; border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--fg); text-decoration: none;
+}
+.actions a.go { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.actions button[aria-pressed="true"].star { color: var(--star); border-color: var(--star); }
+.actions button[aria-pressed="true"].applied { color: var(--ok); border-color: var(--ok); }
+.actions button[aria-pressed="true"].hide { color: var(--muted); border-style: dashed; }
+.actions button:disabled { opacity: 0.5; cursor: default; }
+
+.empty { text-align: center; color: var(--muted); padding: 40px 12px; border: 1px dashed var(--line); border-radius: 10px; }
+.empty b { color: var(--fg); display: block; margin-bottom: 4px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--fg); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 0.85rem; }
+footer { color: var(--muted); font-size: 0.78rem; padding-block: 0 30px; }
+@media (max-width: 480px) {
+  .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card { grid-template-columns: 54px minmax(0, 1fr); gap: 10px; padding: 10px 12px; }
+}
+@media (prefers-reduced-motion: no-preference) { .card { transition: opacity .2s; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>원격탐사 채용 레이더</h1>
+    <p>부처·출연연·공공기관·학회의 원격탐사·공간정보 공고(연구직 공무원 포함)를 마감순으로 모았습니다.</p>
+    <div class="sync" id="sync">불러오는 중…</div>
+  </header>
+
+  <section class="summary" aria-label="요약">
+    <div><b id="s-open">–</b><span>진행 중</span></div>
+    <div class="u"><b id="s-urgent">–</b><span>7일 내 마감</span></div>
+    <div><b id="s-new">–</b><span>새 공고 (3일)</span></div>
+    <div><b id="s-star">–</b><span>관심 · 지원</span></div>
+  </section>
+
+  <div class="bar">
+    <div class="tabs" role="group" aria-label="상태">
+      <button id="tab-all" data-tab="all" aria-pressed="true">진행 중<span class="n"></span></button>
+      <button id="tab-star" data-tab="star" aria-pressed="false">관심<span class="n"></span></button>
+      <button id="tab-applied" data-tab="applied" aria-pressed="false">지원함<span class="n"></span></button>
+      <button id="tab-closed" data-tab="closed" aria-pressed="false">마감<span class="n"></span></button>
+      <button id="tab-hidden" data-tab="hidden" aria-pressed="false">숨김<span class="n"></span></button>
+    </div>
+    <div class="row" id="groups" role="group" aria-label="분야"></div>
+    <div class="row" id="kws" role="group" aria-label="키워드"></div>
+    <div class="row"><input id="q" class="search" type="search" placeholder="기관·제목·분야 검색" aria-label="검색"></div>
+  </div>
+
+  <main class="list" id="list">
+    <div class="empty"><b>공고를 불러오고 있습니다</b>매일 아침 자동 수집된 공고가 여기에 마감일 순으로 표시됩니다.</div>
+  </main>
+
+  <footer>
+    대상: 우주항공청 · 항우연 · 천문연 · 기상청/국가기상위성센터 · 수자원위성연구소 · 해양수산부 · KIOST · 해양환경공단 · 한국해양조사협회 · 국립해양조사원 · 한국섬진흥원 · 극지연구소 · 국토지리정보원 · 공간정보산업진흥원 · 농촌진흥청 · 국립산림과학원 · 국립생물자원관 · 국립재난안전연구원 · 나라일터 · 잡알리오 · 원격탐사학회 · 기상학회.
+    점선 표시는 원문 페이지를 직접 확인하지 못한 공고입니다. 지원 전 원문을 꼭 확인하세요.
+    관심·지원·숨김 표시는 지금 쓰는 기기의 브라우저에만 저장됩니다.
+  </footer>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const GROUPS = ["우주", "해양", "극지", "국토·공간", "농림·환경", "기상·천문", "수자원", "재난", "학회"];
+const KEYWORDS = ["SAR", "InSAR", "Altimetry", "LiDAR", "원격탐사", "위성", "해양환경", "공간정보", "GIS", "드론", "측량"];
+const STATUS_LABEL = { star: "관심", applied: "지원함", hidden: "숨김" };
+
+const state = { postings: [], marks: {}, meta: null, tab: "all", group: null, kw: null, q: "", canWrite: true };
+let db = null;
+
+const $ = (id) => document.getElementById(id);
+const todayStr = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); };
+function daysLeft(deadline) {
+  if (!deadline) return null;
+  const a = new Date(todayStr() + "T00:00:00"), b = new Date(deadline + "T00:00:00");
+  return Math.round((b - a) / 86400000);
+}
+function isNew(p) {
+  const t = p.addedAt || p.posted;
+  if (!t) return false;
+  return (new Date(todayStr()) - new Date(t.slice(0, 10))) / 86400000 <= 3;
+}
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v; else if (k.startsWith("on")) n.addEventListener(k.slice(2), v); else if (v !== false && v != null) n.setAttribute(k, v);
+  }
+  for (const k of kids) if (k != null && k !== false) n.append(k);
+  return n;
+}
+function toast(msg) {
+  const t = $("toast"); t.textContent = msg; t.hidden = false;
+  clearTimeout(toast.t); toast.t = setTimeout(() => (t.hidden = true), 2200);
+}
+
+function buildChips() {
+  const g = $("groups"); g.replaceChildren();
+  for (const name of GROUPS) {
+    g.append(el("button", { class: "chip", id: "g-" + name, "aria-pressed": String(state.group === name),
+      onclick: () => { state.group = state.group === name ? null : name; buildChips(); render(); } }, name));
+  }
+  const k = $("kws"); k.replaceChildren();
+  for (const name of KEYWORDS) {
+    k.append(el("button", { class: "chip", id: "k-" + name, "aria-pressed": String(state.kw === name),
+      onclick: () => { state.kw = state.kw === name ? null : name; buildChips(); render(); } }, name));
+  }
+}
+
+function classify(p) {
+  const m = state.marks[p.id];
+  const d = daysLeft(p.deadline);
+  if (m === "hidden") return "hidden";
+  if (d !== null && d < 0) return "closed";
+  return "open";
+}
+
+function render() {
+  const all = state.postings;
+  const q = state.q.trim().toLowerCase();
+  const counts = { all: 0, star: 0, applied: 0, closed: 0, hidden: 0 };
+  let urgent = 0, fresh = 0;
+  for (const p of all) {
+    const c = classify(p), m = state.marks[p.id];
+    if (c === "open") { counts.all++; const d = daysLeft(p.deadline); if (d !== null && d <= 7) urgent++; if (isNew(p)) fresh++; }
+    if (c === "closed") counts.closed++;
+    if (c === "hidden") counts.hidden++;
+    if (m === "star") counts.star++;
+    if (m === "applied") counts.applied++;
+  }
+  $("s-open").textContent = counts.all;
+  $("s-urgent").textContent = urgent;
+  $("s-new").textContent = fresh;
+  $("s-star").textContent = counts.star + counts.applied;
+  for (const b of document.querySelectorAll(".tabs button")) {
+    b.setAttribute("aria-pressed", String(b.dataset.tab === state.tab));
+    b.querySelector(".n").textContent = counts[b.dataset.tab];
+  }
+
+  let rows = all.filter((p) => {
+    const c = classify(p), m = state.marks[p.id];
+    if (state.tab === "all" && c !== "open") return false;
+    if (state.tab === "closed" && c !== "closed") return false;
+    if (state.tab === "hidden" && c !== "hidden") return false;
+    if ((state.tab === "star" || state.tab === "applied") && m !== state.tab) return false;
+    if (state.group && p.orgGroup !== state.group) return false;
+    if (state.kw && !(p.keywords || []).includes(state.kw)) return false;
+    if (q && !`${p.org} ${p.title} ${p.position} ${p.note || ""}`.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  rows.sort((a, b) => {
+    const da = daysLeft(a.deadline), dbb = daysLeft(b.deadline);
+    if (state.tab === "closed") return (dbb ?? 0) - (da ?? 0);
+    return (da ?? 9999) - (dbb ?? 9999);
+  });
+
+  const list = $("list");
+  if (!all.length) {
+    list.replaceChildren(el("div", { class: "empty" }, el("b", {}, "아직 저장된 공고가 없습니다"), "매일 아침 자동 수집이 돌면 새 공고가 여기에 추가됩니다."));
+    return;
+  }
+  if (!rows.length) {
+    list.replaceChildren(el("div", { class: "empty" }, el("b", {}, "조건에 맞는 공고가 없습니다"), "분야·키워드 필터를 해제하거나 다른 탭을 확인해 보세요."));
+    return;
+  }
+  list.replaceChildren(...rows.map(card));
+}
+
+function card(p) {
+  const d = daysLeft(p.deadline), m = state.marks[p.id];
+  let cls = "dday", big, small;
+  if (d === null) { cls += " open"; big = "상시"; small = "수시"; }
+  else if (d < 0) { big = "마감"; small = p.deadline.slice(5).replace("-", "."); }
+  else { cls += d <= 3 ? " urgent" : d <= 10 ? " soon" : ""; big = d === 0 ? "D-day" : "D-" + d; small = p.deadline.slice(5).replace("-", "."); }
+
+  const btn = (key, label) => el("button", {
+    class: key === "hidden" ? "hide" : key, "aria-pressed": String(m === key), disabled: false,
+    onclick: () => setMark(p.id, m === key ? null : key),
+  }, label);
+
+  return el("article", { class: "card" + (m === "hidden" ? " hidden-mark" : "") },
+    el("div", { class: cls, "aria-label": "마감까지" }, el("b", {}, big), el("small", {}, small)),
+    el("div", { class: "body" },
+      el("div", { class: "meta" },
+        el("span", { class: "org" }, p.org),
+        el("span", {}, "· " + [p.employment, p.education].filter(Boolean).join(" · ")),
+        isNew(p) && classify(p) === "open" ? el("span", { class: "new" }, "NEW") : null,
+        p.verified === false ? el("span", { class: "unv", title: "원문 페이지를 직접 확인하지 못했습니다" }, "미확인") : null,
+      ),
+      el("div", { class: "title" }, p.url ? el("a", { href: p.url, target: "_blank", rel: "noopener" }, p.title) : p.title),
+      p.position ? el("div", { class: "pos" }, p.position) : null,
+      (p.keywords || []).length ? el("div", { class: "kw" }, ...p.keywords.map((k) => el("span", {}, k))) : null,
+      p.note ? el("div", { class: "note" }, p.note) : null,
+      el("div", { class: "actions" },
+        p.url ? el("a", { class: "go", href: p.url, target: "_blank", rel: "noopener" }, "원문 보기") : null,
+        btn("star", "★ 관심"), btn("applied", "지원함"), btn("hidden", m === "hidden" ? "숨김 해제" : "숨김"),
+      ),
+    ),
+  );
+}
+
+const MARKS_KEY = "rs-jobs-marks";
+function loadMarks() {
+  try { return JSON.parse(localStorage.getItem(MARKS_KEY) || "{}") || {}; } catch { return {}; }
+}
+function setMark(id, value) {
+  if (value) state.marks[id] = value; else delete state.marks[id];
+  let saved = true;
+  try { localStorage.setItem(MARKS_KEY, JSON.stringify(state.marks)); } catch { saved = false; }
+  render();
+  if (!saved) toast("이 브라우저에서는 표시가 저장되지 않습니다");
+  else toast(value ? STATUS_LABEL[value] + "(으)로 표시했습니다" : "표시를 해제했습니다");
+}
+
+function renderSync() {
+  const m = state.meta;
+  if (!m) { $("sync").textContent = "자동 수집 기록 없음"; return; }
+  const when = m.lastRun ? m.lastRun.replace("T", " ").slice(0, 16) : "–";
+  $("sync").textContent = `마지막 수집 ${when} · 새 공고 ${m.added ?? 0}건` + (m.note ? ` · ${m.note}` : "");
+}
+
+for (const b of document.querySelectorAll(".tabs button")) b.addEventListener("click", () => { state.tab = b.dataset.tab; render(); });
+let qt; $("q").addEventListener("input", (e) => { clearTimeout(qt); qt = setTimeout(() => { state.q = e.target.value; render(); }, 150); });
+buildChips();
+
+(async () => {
+  state.marks = loadMarks();
+  try {
+    const res = await fetch("jobs.json?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    state.postings = data.postings || [];
+    state.meta = data.meta || null;
+    renderSync();
+    render();
+  } catch {
+    $("sync").textContent = "공고 파일을 불러오지 못했습니다. 잠시 후 새로고침해 주세요.";
+    $("list").replaceChildren(el("div", { class: "empty" }, el("b", {}, "공고 목록을 불러올 수 없습니다"), "네트워크 연결을 확인한 뒤 새로고침해 주세요."));
+  }
+})();
+</script>
+</body>
+</html>
