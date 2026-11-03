@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-03T08:16",
-    "added": 0,
-    "checked": 12,
-    "note": "극지연·해양환경공단·국토지리정보원·해수부·공간정보산업진흥원·기상학회 접속 불가"
+    "lastRun": "2026-11-04T08:21",
+    "added": 1,
+    "checked": 18,
+    "note": "공간정보산업진흥원·기상학회 접속 불가. KIOST 공고 분야 미확인"
   },
   "postings": [
     {
@@ -247,6 +247,24 @@
       "note": "접수 11/2~11/4 우편·방문. 석사 요건 아님",
       "verified": true,
       "addedAt": "2026-11-02T21:40"
+    },
+    {
+      "id": "kiost-26-03-07-contract",
+      "org": "KIOST",
+      "orgGroup": "해양",
+      "title": "[제26-03-07호]한국해양과학기술원 2026년 기간제계약직(전문계약직기술원) 채용",
+      "position": "전문계약직기술원 2명 · 분야는 첨부 직무기술서(PDF) 확인 (부산)",
+      "employment": "계약직",
+      "education": "대졸·석사·박사",
+      "deadline": "2026-11-18",
+      "posted": "2026-11-03",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=306633",
+      "keywords": [
+        "해양환경"
+      ],
+      "note": "NCS 건설·기계·전기전자·환경·연구. 원격탐사 관련 여부 미확인, 첨부에서 확인 필요",
+      "verified": true,
+      "addedAt": "2026-11-04T08:21"
     }
   ]
 }
