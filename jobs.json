@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-10T14:39",
-    "added": 0,
-    "checked": 13,
-    "note": "공간정보산업진흥원 접속 불가, 극지연·지리정보원·재난연·해양환경공단 목록 판독 불가"
+    "lastRun": "2026-11-10T15:30",
+    "added": 13,
+    "checked": 6,
+    "note": "민간기업(사람인·한화인·KAI·컨텍) 추가. 한화 위성직무 현재 없음"
   },
   "postings": [
     {
@@ -303,6 +303,254 @@
       "note": "세종 근무. 서류-면접. 7개 분야 중 공간정보 및 교통 분야 해당",
       "verified": true,
       "addedAt": "2026-11-08T13:41"
+    },
+    {
+      "id": "kmit-2026-11-ocean-sat",
+      "org": "해양정보기술",
+      "orgGroup": "민간기업",
+      "title": "해양자료 및 위성자료 분석 부문 직원 채용",
+      "position": "해양자료·위성자료 분석 (딥러닝·모델링·GIS)",
+      "employment": "정규직",
+      "education": "대졸 이상, 경력무관",
+      "deadline": "2026-11-30",
+      "posted": "2026-10-20",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55343001",
+      "keywords": [
+        "위성",
+        "해양환경",
+        "원격탐사",
+        "GIS"
+      ],
+      "note": "서울 금천구. 해양+위성 분석이라 가장 직결",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "stellarvision-2026-sat-rnd-lead",
+      "org": "스텔라비전",
+      "orgGroup": "민간기업",
+      "title": "위성활용 연구개발 리더 채용(박사급)",
+      "position": "위성활용 R&D 리더·과제기획/PM",
+      "employment": "정규직",
+      "education": "석사 이상, 경력 7년↑ (박사급)",
+      "deadline": "2026-12-19",
+      "posted": "2026-10-20",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55347149",
+      "keywords": [
+        "위성",
+        "원격탐사"
+      ],
+      "note": "서울 강서구. 경력 요건 높음",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "edelway-2026-sar-sys-eng",
+      "org": "에델웨이",
+      "orgGroup": "민간기업",
+      "title": "SAR/레이다 시스템 엔지니어 (3-15년)",
+      "position": "SAR/레이다 시스템·알고리즘 개발",
+      "employment": "정규직",
+      "education": "대졸 이상, 경력 3~7년",
+      "deadline": "2026-11-13",
+      "posted": "2026-10-23",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55378995",
+      "keywords": [
+        "SAR",
+        "위성"
+      ],
+      "note": "성남 분당. 경력직",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "geostory-2026-geomatics-img",
+      "org": "지오스토리",
+      "orgGroup": "민간기업",
+      "title": "[지오스토리] 국방 지오매틱스 체계 및 영상분석 경력직 채용",
+      "position": "국방 지오매틱스·위성/항공 영상분석 (라이다·측량 포함)",
+      "employment": "정규직",
+      "education": "학력무관, 경력",
+      "deadline": "2026-12-03",
+      "posted": "2026-11-03",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55465236",
+      "keywords": [
+        "위성",
+        "LiDAR",
+        "공간정보",
+        "측량"
+      ],
+      "note": "서울 강서구",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "lumir-2026-ai-eng",
+      "org": "루미르",
+      "orgGroup": "민간기업",
+      "title": "인공위성기업 [루미르] AI 엔지니어 채용",
+      "position": "SAR 위성기업 AI 엔지니어 (위성영상 AI)",
+      "employment": "정규직",
+      "education": "대졸 이상, 경력 3~20년",
+      "deadline": "",
+      "posted": "2026-11-06",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55502181",
+      "keywords": [
+        "SAR",
+        "위성"
+      ],
+      "note": "상시채용. 용인 수지. SAR 위성(LumirX) 개발사",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "sia-2026-ai-research",
+      "org": "에스아이에이(SIA)",
+      "orgGroup": "민간기업",
+      "title": "[신입·경력] AI Research Engineer (VLM & Multimodal AI) 채용",
+      "position": "위성영상 분석 AI 연구 (VLM·멀티모달)",
+      "employment": "정규직",
+      "education": "학력무관, 신입·경력",
+      "deadline": "",
+      "posted": "2026-10-22",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55362720",
+      "keywords": [
+        "위성",
+        "원격탐사"
+      ],
+      "note": "상시채용. 대전 유성. 위성영상 AI 분석 기업",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "indiware-2026-sat-img-proc",
+      "org": "인디웨어",
+      "orgGroup": "민간기업",
+      "title": "위성영상 처리 작업자 채용 (근무지 대전)",
+      "position": "위성영상 처리·보정 작업",
+      "employment": "계약직",
+      "education": "초대졸 이상, 경력무관",
+      "deadline": "",
+      "posted": "2026-10-27",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55407816",
+      "keywords": [
+        "위성",
+        "원격탐사"
+      ],
+      "note": "채용시 마감. 대전 유성. 석사 요건 아님",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "pixoneer-2026-sw-dev",
+      "org": "픽소니어",
+      "orgGroup": "민간기업",
+      "title": "소프트웨어 개발자 채용",
+      "position": "위성영상 처리 SW 개발 (영상처리·C++)",
+      "employment": "정규직",
+      "education": "대졸 이상, 경력 3년↑",
+      "deadline": "2026-11-29",
+      "posted": "2026-10-30",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55439188",
+      "keywords": [
+        "위성",
+        "원격탐사"
+      ],
+      "note": "대전 유성. 위성영상 SW 기업",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "spade-2026-geoai-backend",
+      "org": "스패이드",
+      "orgGroup": "민간기업",
+      "title": "GeoAI Platform Backend Engineer",
+      "position": "GeoAI 플랫폼 백엔드 (GIS·클라우드)",
+      "employment": "정규직",
+      "education": "대졸 이상, 경력 4~10년",
+      "deadline": "2026-11-20",
+      "posted": "2026-10-22",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55361937",
+      "keywords": [
+        "GIS",
+        "공간정보"
+      ],
+      "note": "서울 강남. 개발직",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "naraspace-2026-all",
+      "org": "나라스페이스테크놀로지",
+      "orgGroup": "민간기업",
+      "title": "[위성기술] 나라스페이스테크놀로지 각 부문별 신입/경력 모집",
+      "position": "초소형위성·위성데이터 각 부문 (데이터·SW 등)",
+      "employment": "정규직",
+      "education": "학력무관, 신입·경력",
+      "deadline": "",
+      "posted": "2026-10-14",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55013189",
+      "keywords": [
+        "위성"
+      ],
+      "note": "채용시 마감. 서울 영등포. 직무별 확인 필요",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "geocni-2026-gis",
+      "org": "지오씨엔아이",
+      "orgGroup": "민간기업",
+      "title": "㈜지오씨엔아이 에너지 및 국토전공 관련학과 채용(GIS경력우대)",
+      "position": "국토·에너지 분야 GIS R&D/SI",
+      "employment": "정규직",
+      "education": "초대졸 이상, 경력",
+      "deadline": "2026-12-22",
+      "posted": "2026-11-03",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55372542",
+      "keywords": [
+        "GIS",
+        "공간정보"
+      ],
+      "note": "대구 동구. GIS 경력 우대",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "soltop-2026-sat",
+      "org": "솔탑",
+      "orgGroup": "민간기업",
+      "title": "[솔탑] 2026년 위성·항공·경영 분야 부문별 신입/경력 채용",
+      "position": "위성 지상국·SW 분야 신입/경력",
+      "employment": "정규직",
+      "education": "초대졸 이상, 신입·경력",
+      "deadline": "2026-12-06",
+      "posted": "2026-11-06",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55506496",
+      "keywords": [
+        "위성"
+      ],
+      "note": "세종. 위성 지상체 기업",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "kai-2026-career-pool",
+      "org": "한국항공우주산업(KAI)",
+      "orgGroup": "민간기업",
+      "title": "경력사원 상시채용 인재Pool",
+      "position": "경력사원 인재Pool (우주·위성 포함 전 직군 등록)",
+      "employment": "상시",
+      "education": "경력",
+      "deadline": "",
+      "posted": "2026-07-31",
+      "url": "https://koreaaero.recruiter.co.kr/career/home",
+      "keywords": [
+        "위성"
+      ],
+      "note": "현재 KAI 유일한 접수중 공고. 하반기 신입 공채는 9/21 마감",
+      "verified": true,
+      "addedAt": "2026-11-10T15:30"
     }
   ]
 }
