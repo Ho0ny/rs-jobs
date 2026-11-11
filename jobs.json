@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-10T15:30",
-    "added": 13,
-    "checked": 6,
-    "note": "민간기업(사람인·한화인·KAI·컨텍) 추가. 한화 위성직무 현재 없음"
+    "lastRun": "2026-11-11T22:09",
+    "added": 3,
+    "checked": 13,
+    "note": "KIOST·국립환경과학원·텔레픽스 추가. 위성센터·국토지리정보원 목록 읽기 실패"
   },
   "postings": [
     {
@@ -551,6 +551,61 @@
       "note": "현재 KAI 유일한 접수중 공고. 하반기 신입 공채는 9/21 마감",
       "verified": true,
       "addedAt": "2026-11-10T15:30"
+    },
+    {
+      "id": "kiost-2027-1-regular",
+      "org": "KIOST",
+      "orgGroup": "해양",
+      "title": "[제27-01-01호 및 제27-02-01호]한국해양과학기술원 2027년 1차 직원(정규직/무기계약직) 채용",
+      "position": "연구직·기술직 등 정규직 9명, 무기계약직 14명 (분야별 직무기술서 참조)",
+      "employment": "정규직",
+      "education": "분야별 상이 (석사·박사 포함)",
+      "deadline": "2026-11-26",
+      "posted": "2026-11-11",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=306913",
+      "keywords": [
+        "해양환경"
+      ],
+      "note": "접수 11.13~11.26. 원격탐사·위성 관련 분야 포함 여부는 직무기술서 확인 필요",
+      "verified": true,
+      "addedAt": "2026-11-11T22:09"
+    },
+    {
+      "id": "nier-2026-2h-researcher",
+      "org": "국립환경과학원",
+      "orgGroup": "농림·환경",
+      "title": "2026년 국립환경과학원 하반기 근로자 정기채용 공고(일반 경쟁 및 장애인 제한경쟁)",
+      "position": "전문연구원 21명 등 (공무직·휴직대체)",
+      "employment": "공무직",
+      "education": "직종별 상이 (공고문 참고)",
+      "deadline": "2026-11-13",
+      "posted": "2026-11-06",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307655&searchJobsecode=020&selMenuNo=400&menuNo=401",
+      "keywords": [
+        "원격탐사"
+      ],
+      "note": "사람인 '원격탐사' 검색에 매칭됨. 이메일 접수. 세부 분야는 공고문 확인",
+      "verified": true,
+      "addedAt": "2026-11-11T22:09"
+    },
+    {
+      "id": "telepix-2026-fde",
+      "org": "텔레픽스",
+      "orgGroup": "민간기업",
+      "title": "Foward Deployed Engineer (FDE)",
+      "position": "위성영상·지리공간 데이터와 AI 모델 결합 PoC 및 서비스 구현",
+      "employment": "정규직",
+      "education": "대졸(4년) 이상, 경력 3년 이상",
+      "deadline": "",
+      "posted": "2026-10-15",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55301308",
+      "keywords": [
+        "위성",
+        "공간정보"
+      ],
+      "note": "채용시 마감. 근무지 서울 영등포구(여의도)",
+      "verified": true,
+      "addedAt": "2026-11-11T22:09"
     }
   ]
 }
