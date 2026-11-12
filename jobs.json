@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-11T22:09",
-    "added": 3,
-    "checked": 13,
-    "note": "KIOST·국립환경과학원·텔레픽스 추가. 위성센터·국토지리정보원 목록 읽기 실패"
+    "lastRun": "2026-11-12T14:22",
+    "added": 1,
+    "checked": 12,
+    "note": "나라일터 일부 검색 시간초과. KASA·NMSC·NGII·NDMI 목록 읽기 실패"
   },
   "postings": [
     {
@@ -606,6 +606,26 @@
       "note": "채용시 마감. 근무지 서울 영등포구(여의도)",
       "verified": true,
       "addedAt": "2026-11-11T22:09"
+    },
+    {
+      "id": "sia-2026-ml-runtime",
+      "org": "에스아이에이(SIA)",
+      "orgGroup": "민간기업",
+      "title": "[위성 분석 전문 중견기업] ML Engineer (Runtime Optimization)",
+      "position": "위성영상 CV 모델(OVISION) 서빙·추론 최적화 ML 엔지니어 (서울 서초)",
+      "employment": "정규직",
+      "education": "학력무관 (경력 3~10년)",
+      "deadline": "2026-11-17",
+      "posted": "2026-11-02",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55454803",
+      "keywords": [
+        "위성",
+        "원격탐사",
+        "공간정보"
+      ],
+      "note": "헤드헌팅(석세스코리아컨설팅) 공고. 우대: 지구관측 영상 CV, GDAL·TorchGeo, GeoAI",
+      "verified": true,
+      "addedAt": "2026-11-12T14:22"
     }
   ]
 }
