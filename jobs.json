@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-16T15:21",
-    "added": 3,
-    "checked": 11,
-    "note": "한화·KOPRI·KARI·KASI 확인. KSRS·KOEM·NIFOS 목록 읽기 실패"
+    "lastRun": "2026-11-19T15:04",
+    "added": 2,
+    "checked": 6,
+    "note": "ALIO·나라일터·사람인·KASI·KARI·KOPRI 확인. KSRS·KHOA·NIFOS 접속 실패"
   },
   "postings": [
     {
@@ -468,9 +468,9 @@
       "position": "GeoAI 플랫폼 백엔드 (GIS·클라우드)",
       "employment": "정규직",
       "education": "대졸 이상, 경력 4~10년",
-      "deadline": "2026-11-20",
+      "deadline": "2026-12-16",
       "posted": "2026-10-22",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55361937",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55600102",
       "keywords": [
         "GIS",
         "공간정보"
@@ -684,6 +684,44 @@
       "note": "사람인 공고. 마감 임박",
       "verified": true,
       "addedAt": "2026-11-16T15:21"
+    },
+    {
+      "id": "kiost-2027-1h-postdoc",
+      "org": "KIOST",
+      "orgGroup": "해양",
+      "title": "[제26-03-08호] 한국해양과학기술원 2027년 상반기 박사후/석사후 연수연구원 채용",
+      "position": "박사후·석사후 연수연구원 (해양데이터·인프라, 해양영토 등 분야별)",
+      "employment": "박사후연구원",
+      "education": "석사·박사",
+      "deadline": "2026-12-02",
+      "posted": "2026-11-17",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=307152",
+      "keywords": [
+        "해양환경"
+      ],
+      "note": "70명, 부산·충남·경북·경남·제주. 해양위성/원격탐사 분야 포함 여부는 직무기술서 확인",
+      "verified": true,
+      "addedAt": "2026-11-19T15:04"
+    },
+    {
+      "id": "netform-2026-drone-survey",
+      "org": "넷폼",
+      "orgGroup": "민간기업",
+      "title": "[넷폼] 드론 촬영·측량 엔지니어 (경력) 채용",
+      "position": "드론 촬영 운용, 정사영상·3D 모델·점군 데이터 제작",
+      "employment": "정규직",
+      "education": "학력무관, 경력 1년 이상",
+      "deadline": "2026-12-17",
+      "posted": "2026-11-17",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55594565",
+      "keywords": [
+        "드론",
+        "측량",
+        "LiDAR"
+      ],
+      "note": "화성 동탄. 무인멀티콥터 3종 이상 필수, 측량기사 우대. 석사 요건 아님",
+      "verified": true,
+      "addedAt": "2026-11-19T15:04"
     }
   ]
 }
