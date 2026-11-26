@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-19T15:04",
-    "added": 2,
-    "checked": 6,
-    "note": "ALIO·나라일터·사람인·KASI·KARI·KOPRI 확인. KSRS·KHOA·NIFOS 접속 실패"
+    "lastRun": "2026-11-26T18:10",
+    "added": 21,
+    "checked": 40,
+    "note": "11/26 수동 업데이트: 공공·민간·연구사·2027 채용예정 반영"
   },
   "postings": [
     {
@@ -839,7 +839,7 @@
       "title": "2026년도 국토지리정보원 시설서기(지적직류) 경력경쟁채용시험(7호 국가직 전환) 공고",
       "position": "시설서기(지적직류) — 7호 국가직 전환 대상 경력채용",
       "employment": "공무원",
-      "education": "공고문 요건(국가직 전환 대상자 한정 여부 확인)",
+      "education": "지방직 현직자(국가직 전환 대상)",
       "deadline": "2026-12-01",
       "posted": "2026-11-16",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308643&menuNo=401&selMenuNo=401",
@@ -847,7 +847,7 @@
         "공간정보",
         "측량"
       ],
-      "note": "'7호 국가직 전환' 공고라 일반 지원 가능 여부 공고문 확인 필요",
+      "note": "⚠ 지방직 공무원의 국가직 전환 전형 — 일반인 지원 불가. 수원",
       "verified": true,
       "addedAt": "2026-11-26T17:20"
     },
@@ -856,16 +856,16 @@
       "org": "공간정보산업진흥원",
       "orgGroup": "국토·공간",
       "title": "2026년 공간정보산업진흥원 청년인턴 채용 공고",
-      "position": "청년인턴 (공간정보 산업 지원)",
+      "position": "체험형 청년인턴 6명 – DB 구축·관리/산업진흥/인재양성/경영지원",
       "employment": "계약직",
-      "education": "공고문 확인",
+      "education": "학력무관, 만 34세 이하 미취업자(고용보험 미가입)",
       "deadline": "2026-11-29",
       "posted": "2026-11-20",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400196&menuNo=401&selMenuNo=401",
       "keywords": [
         "공간정보"
       ],
-      "note": "청년인턴. 11/29 마감",
+      "note": "경기, 체험형. 사람인 접수. 공고일 기준 고용보험 가입 중이면 불가",
       "verified": true,
       "addedAt": "2026-11-26T17:20"
     },
@@ -996,6 +996,63 @@
       "note": "2027 상반기 시행 예정(규모·일정 변경 가능)",
       "verified": false,
       "addedAt": "2026-11-26T17:45"
+    },
+    {
+      "id": "kopri-2026-11-postdoc-rs",
+      "org": "극지연구소",
+      "orgGroup": "극지",
+      "title": "2026년 하반기 연수연구원(박사후 및 석사후) 채용 재공고",
+      "position": "[박사후-1] 해빙 원격탐사 산출물 개발 / [박사후-2] 광학 위성·무인기 영상 기반 항구 객체 탐지",
+      "employment": "박사후연구원",
+      "education": "박사 (최근 3년 SCIE 제1저자 1편 이상)",
+      "deadline": "2026-12-04",
+      "posted": "2026-11-20",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=307274",
+      "keywords": [
+        "원격탐사",
+        "위성",
+        "드론"
+      ],
+      "note": "인천, 2명. 접수 kopri.recruiter.co.kr. 원격탐사 직결이나 박사학위 필요",
+      "verified": true,
+      "addedAt": "2026-11-26T18:10"
+    },
+    {
+      "id": "kopri-2026-11-trainee",
+      "org": "극지연구소",
+      "orgGroup": "극지",
+      "title": "2026년 하반기 극지연구소 연수생 채용 재공고",
+      "position": "(석사과정) 빙권 해양환경변화 연구 / (박사과정) 기후-빙상 상호작용·빙상역학 모델링",
+      "employment": "계약직",
+      "education": "석·박사과정 재학(예정)자, 타기관 미취업자",
+      "deadline": "2026-12-04",
+      "posted": "2026-11-20",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=307275",
+      "keywords": [
+        "해양환경"
+      ],
+      "note": "인천, 2명, 학생연수생. 석사 졸업자는 박사과정 재학·입학 예정이어야 지원 가능",
+      "verified": true,
+      "addedAt": "2026-11-26T18:10"
+    },
+    {
+      "id": "lx-2026-11-geoai-re",
+      "org": "한국국토정보공사",
+      "orgGroup": "국토·공간",
+      "title": "2026년 한국국토정보공사 전문경력직(Geo AI 및 공간데이터 분석) 채용 재공고",
+      "position": "전문경력직(교수직) – Geo AI 및 공간데이터 분석 1명",
+      "employment": "계약직",
+      "education": "박사",
+      "deadline": "2026-12-07",
+      "posted": "2026-11-24",
+      "url": "https://job.alio.go.kr/recruitview.do?idx=307393",
+      "keywords": [
+        "공간정보",
+        "GIS"
+      ],
+      "note": "11/17 마감됐던 공고의 재공고. 박사 필요",
+      "verified": true,
+      "addedAt": "2026-11-26T18:10"
     }
   ]
 }
