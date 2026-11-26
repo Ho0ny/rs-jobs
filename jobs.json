@@ -868,6 +868,134 @@
       "note": "청년인턴. 11/29 마감",
       "verified": true,
       "addedAt": "2026-11-26T17:20"
+    },
+    {
+      "id": "plan-2027-mpm-annual",
+      "org": "인사혁신처",
+      "orgGroup": "국토·공간",
+      "title": "[채용예정] 2027년도 국가공무원 채용시험 계획 공고",
+      "position": "연간 계획 — 연구직 경력경쟁은 부처별로 나라일터 공고",
+      "employment": "채용예정",
+      "education": "석사 이상(직전 공고 기준)",
+      "deadline": "",
+      "posted": "",
+      "url": "https://gongmuwon.gosi.kr/crrut/indexMain.do",
+      "keywords": [
+        "공간정보"
+      ],
+      "note": "예상 1월 초. 연구사는 이 계획이 아니라 부처별 경력경쟁으로 연중 공고",
+      "verified": false,
+      "addedAt": "2026-11-26T17:45"
+    },
+    {
+      "id": "plan-2027-public-fair",
+      "org": "재정경제부·알리오",
+      "orgGroup": "국토·공간",
+      "title": "[채용예정] 2027 공공기관 채용정보박람회·연간 채용계획 발표",
+      "position": "공공기관 연간 신규채용 규모 발표 (2026년은 정규직 2.8만명)",
+      "employment": "채용예정",
+      "education": "석사 이상(직전 공고 기준)",
+      "deadline": "",
+      "posted": "",
+      "url": "https://magazine.hankyung.com/business/article/202601275611b",
+      "keywords": [
+        "공간정보"
+      ],
+      "note": "예상 1월 말. 2026년은 1/28 발표",
+      "verified": false,
+      "addedAt": "2026-11-26T17:45"
+    },
+    {
+      "id": "plan-2027-nifos-research",
+      "org": "국립산림과학원",
+      "orgGroup": "농림·환경",
+      "title": "[채용예정] 2027년 상반기 국립산림과학원 연구직공무원 경력경쟁채용",
+      "position": "임업연구사 (산림 원격탐사·위성 분야 포함 여부는 공고 시 확인)",
+      "employment": "채용예정",
+      "education": "석사 이상(직전 공고 기준)",
+      "deadline": "",
+      "posted": "",
+      "url": "https://nifos.forest.go.kr/kfsweb/cop/bbs/selectBoardArticle.do?nttId=3207535&bbsId=BBSMSTR_1034&mn=UKFR_03_01_04&ctgryLrcls=CTGRY128",
+      "keywords": [
+        "원격탐사",
+        "위성"
+      ],
+      "note": "직전: 2026 상반기 5/22~6/1 접수, 2025 상반기 8명. 하반기도 있음",
+      "verified": false,
+      "addedAt": "2026-11-26T17:45"
+    },
+    {
+      "id": "plan-2027-rda-research",
+      "org": "농촌진흥청",
+      "orgGroup": "농림·환경",
+      "title": "[채용예정] 2027년 농촌진흥청 연구직공무원 경력경쟁채용",
+      "position": "농업연구사 (농업위성·농촌환경 분야 여부 공고 시 확인)",
+      "employment": "채용예정",
+      "education": "석사 이상(직전 공고 기준)",
+      "deadline": "",
+      "posted": "",
+      "url": "https://rda.go.kr/board/board.do?mode=list&prgId=acp_adopancmEntry&boardId=adopancm&currPage=1&dataNo=100000713526",
+      "keywords": [
+        "원격탐사",
+        "위성"
+      ],
+      "note": "직전: 2025년 농업연구사 30명 등. 연 1회 내외",
+      "verified": false,
+      "addedAt": "2026-11-26T17:45"
+    },
+    {
+      "id": "plan-2027-seoul-researcher",
+      "org": "서울특별시",
+      "orgGroup": "국토·공간",
+      "title": "[채용예정] 2027년 서울시 연구사 경력경쟁 채용",
+      "position": "서울시 연구사 (보건환경연구원 등)",
+      "employment": "채용예정",
+      "education": "석사 이상(직전 공고 기준)",
+      "deadline": "",
+      "posted": "",
+      "url": "https://mediahub.seoul.go.kr/archives/2017149",
+      "keywords": [
+        "공간정보"
+      ],
+      "note": "직전: 연구사 21명, 3월 하순 접수",
+      "verified": false,
+      "addedAt": "2026-11-26T17:45"
+    },
+    {
+      "id": "plan-2027-gyeonggi-researcher",
+      "org": "경기도",
+      "orgGroup": "국토·공간",
+      "title": "[채용예정] 2027년 경기도 경력경쟁임용시험 제1회 (연구사·지도사)",
+      "position": "경기도 연구사·지도사",
+      "employment": "채용예정",
+      "education": "석사 이상(직전 공고 기준)",
+      "deadline": "",
+      "posted": "",
+      "url": "https://www.gg.go.kr/contents/contents.do?ciIdx=482&menuId=1550",
+      "keywords": [
+        "공간정보"
+      ],
+      "note": "직전: 2월 하순 접수",
+      "verified": false,
+      "addedAt": "2026-11-26T17:45"
+    },
+    {
+      "id": "plan-2027-seoul-public",
+      "org": "서울시 공공기관",
+      "orgGroup": "국토·공간",
+      "title": "[채용예정] 2027년 상반기 서울시 공공기관 직원 통합채용",
+      "position": "서울시 산하 공공기관 정규직 통합채용 150~200명",
+      "employment": "채용예정",
+      "education": "석사 이상(직전 공고 기준)",
+      "deadline": "",
+      "posted": "",
+      "url": "https://www.seoul.go.kr/news/news_employ.do?nttNo=468016",
+      "keywords": [
+        "공간정보"
+      ],
+      "note": "2027 상반기 시행 예정(규모·일정 변경 가능)",
+      "verified": false,
+      "addedAt": "2026-11-26T17:45"
     }
   ]
 }
